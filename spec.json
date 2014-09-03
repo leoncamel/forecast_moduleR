@@ -1,0 +1,44 @@
+{
+    "Name": "forecast",
+    "Description": "forecast on time series. Source code repository : https://github.com/DataCanvasIO/example-modules/tree/master/modules/modeling/R/forecast",
+    "Version": "0.1",
+    "CategoryTags": [
+        "Machine Learning"
+    ],
+    "Cmd": "Rscript main.R",
+    "Param": {
+        "column_name": {
+            "Default": "Adj.Close",
+            "Type": "string"
+        },
+        "start": {
+            "Default": "1993 3",
+            "Type": "string"
+        },
+        "end": {
+            "Default": "2008 3",
+            "Type": "string"
+        },
+        "forecast_number": {
+            "Default": "10",
+            "Type": "integer"
+        },
+        "frequency": {
+            "Default": "12",
+            "Type": "integer"
+        }
+    },
+    "Input": {
+        "TimeSeries": [
+            "csv"
+        ]
+    },
+    "Output": {
+        "Forecast": [
+            "csv"
+        ],
+        "PlotPdf": [
+            "pdf"
+        ]
+    }
+}
